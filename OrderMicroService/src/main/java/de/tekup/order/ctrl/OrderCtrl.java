@@ -31,6 +31,6 @@ public class OrderCtrl {
 	
 	@PostMapping("/book")
 	public Order bookOrder(@RequestBody Order order) {
-		return orderService.saveOrder(order);
+		return orderService.saveOrderFeign(order);
 	}
 }
